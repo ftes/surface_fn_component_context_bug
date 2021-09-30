@@ -17,7 +17,7 @@ defmodule SurfaceFnComponentContextBugWeb.Router do
   scope "/", SurfaceFnComponentContextBugWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", PageLive
   end
 
   # Other scopes may use custom stacks.
